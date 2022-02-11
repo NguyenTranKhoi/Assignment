@@ -17,63 +17,85 @@
 
 <body>
     <div class="wrap">
-        <div class="head">
-            <div class="head_item">
+        <div class="head bg-amber-900 w-full">
+            <div class="head_item max-w-screen-xl m-auto flex justify-between h-1/4">
                 <div class="address">
-                    <h5>ĐỊA CHỈ: 428 NGUYỄN KIỆM – P3 – Q. PHÚ NHUẬN -TP.HỒ CHÍ MINH || 0778601228 - 0916386533 (ZALO)
+                    <h5 class="text-sm text-white h-1/4 pt-2">ĐỊA CHỈ: 428 NGUYỄN KIỆM – P3 – Q. PHÚ NHUẬN -TP.HỒ CHÍ
+                        MINH
+                        ||
+                        0778601228 -
+                        0916386533 (ZALO)
                     </h5>
                 </div>
                 <!-- address -->
-                <div class="search_sigin">
-                    <a href=""><i class="fas fa-search"></i></a>
-                    <div class="btn_one"></div>
-                    <strong><a href="./dangnhap.php">Đăng nhập</a></strong>
+                <div class="search_sigin flex gap-3">
+                    <!-- <div class="search__product relative inline-block px-15 pointer-events-auto w-10"> -->
+                    <a href="" class="text-white mt-1"><i class="fas fa-search"></i></a>
+                    <!-- <div
+                            class="search-item__box search-item__box--no-search content-center absolute top-30 bg-slate-100 w-259 rounded-2px">
+                            <form action="" method="POST">
+                                <div class="box">
+                                    <div class="container-3">
+                                        <input type="search" name="key_word" id="search"
+                                            placeholder="Tìm kiếm..." /><button type="submit" class="icon"><i
+                                                class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> -->
+                    <!-- </div> -->
+                    <div class="btn_one border-1 border-solid border-neutral-300 min-h-0 "></div>
+                    <strong class="mt-1 text-base"><a class="no-underline text-white hover:text-white"
+                            href="./dangnhap.php">Đăng
+                            nhập</a></strong>
                 </div>
                 <!-- search_sigin -->
             </div>
             <!-- head_item -->
         </div>
         <!-- head -->
-        <header>
+        <header class="z-10 bg-white sticky inset-0 opacity-90">
             <div class="header-total">
-                <div class="container_header">
+                <div class="container_header flex justify-between max-w-screen-xl m-auto">
                     <div class="logo_item">
-                        <img src="./image/logo.jpg" width="110px">
+                        <a href="">
+                            <img src="./image/logo.jpg" width="110px">
+                        </a>
                     </div>
                     <!-- logo_item -->
 
                     <nav>
-                        <ul id="main-menu">
-                            <li><a href="">TRANG CHỦ</a></li>
-                            <li><a href="./gioithieu.php">GIỚI THIỆU</a></li>
-                            <li>
-                                <a href="../product/coffe-vn.php">SẢN PHẨM
-                                    <i class=" nav-down fas fa-caret-down"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href="">CÀ PHÊ VIỆT</a></li>
-                                    <li><a href="../product/italian-coffe.php">CÀ PHÊ Ý</a></li>
-                                    <li><a href="">NƯỚC ÉP TRÀ</a></li>
-                                    <li><a href="">SINH TỐ</a></li>
-                                    <li><a href="">ĐIỂM TÂM</a></li>
-                                </ul>
+                        <ul id="main-menu" class="list-none">
+                            <li class="inline-block px-2 font-semibold py-4"><a href=""
+                                    class="text-slate-500 no-underline hover:text-black">TRANG CHỦ</a>
                             </li>
-                            <li><a href="">TIN TỨC</a></li>
-                            <li><a href="./oder.php">HƯỚNG DẪN ĐẶT HÀNG</a></li>
-                            <li><a href="./lienhe.php">LIÊN HỆ</a></li>
+                            <li class="inline-block px-2 font-semibold"><a href=""
+                                    class="text-slate-500 no-underline hover:text-black">GIỚI THIỆU</a>
+                            </li>
+                            <li class="inline-block px-2 font-semibold"><a href=""
+                                    class="text-slate-500 no-underline hover:text-black">SẢN PHẨM</a>
+                            </li>
+                            <li class="inline-block px-2 font-semibold"><a href=""
+                                    class="text-slate-500 no-underline hover:text-black">TIN TỨC</a>
+                            </li>
+                            <li class="inline-block px-2 font-semibold"><a href=""
+                                    class="text-slate-500 no-underline hover:text-black">HƯỚNG DẪN ĐẶT
+                                    HÀNG</a></li>
+                            <li class="inline-block px-2 font-semibold"><a href=""
+                                    class="text-slate-500 no-underline hover:text-black">LIÊN HỆ</a></li>
                         </ul>
                     </nav>
                     <div class="shop-cart">
                         <div class="header-cart-wrap">
-                            <a href="./shopping.php">
-                                <i class="fas fa-shopping-cart"></i>
+                            <a href="" class="">
+                                <i class="fas fa-shopping-cart py-4 text-slate-500 hover:text-black text-lg"></i>
                             </a>
-                            <div class="header-cart-list header-cart-list--no-cart">
+                            <!-- <div class="header-cart-list header-cart-list--no-cart">
                                 <img src="./image/no-cart.png" alt="" class="header-cart-no-cart-img">
                                 <span class="header-cart-list-no-cart-msg">
                                     Chưa có sản phẩm ạ!
                                 </span>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -116,9 +138,9 @@
         </section>
         <!-- banner-head -->
         <aside>
-            <div class="dear-item">
-                <div class="dear-item-one">
-                    <div class="dear-image">
+            <div class="dear-item grid grid-cols-3 mt-4">
+                <div class="dear-item-one m-auto text-center">
+                    <div class="dear-image pl-20">
                         <img src="./image/service_1.png" alt="">
                     </div>
                     <!-- dear-image -->
@@ -129,8 +151,8 @@
                     <!-- dear-content -->
                 </div>
                 <!-- dear-item-one -->
-                <div class="dear-item-true">
-                    <div class="dear-image">
+                <div class="dear-item-true m-auto text-center">
+                    <div class="dear-image pl-20">
                         <img src="./image/service_2.png" alt="">
                     </div>
                     <!-- dear-image -->
@@ -141,8 +163,8 @@
                     <!-- dear-content -->
                 </div>
                 <!-- dear-item-true -->
-                <div class="dear-item-three">
-                    <div class="dear-image">
+                <div class="dear-item-three m-auto text-center">
+                    <div class="dear-image pl-20">
                         <img src="./image/service_3.png" alt="">
                     </div>
                     <!-- dear-image -->
@@ -158,31 +180,23 @@
         </aside>
         <!-- aside -->
 
-        <form action="" method="POST">
-            <div class="box">
-                <div class="container-3">
-                    <button type="submit" class="icon"><i class="fa fa-search"></i></button>
-                    <input type="search" name="key_word" id="search" placeholder="Bạn hãy tìm tớ đi hehe..." />
-                </div>
-            </div>
-        </form>
-
         <main class="main_content">
             <div class="slider-product-one">
-                <article class="special_content">
-                    <div class="special_content_text">
-                        <div class="box-item"></div>
+                <article class="special_content mt-4 bg-red-100">
+                    <div class="special_content_text grid grid-cols-3 text-center">
+                        <div class="box-item bg-black w-[470px] h-[2px] ml-[100px] mt-[18px] opacity-40"></div>
                         <h3 style="color: #555;">ĐỒ UỐNG MỚI</h3>
-                        <div class="box-item2"></div>
+                        <div class="box-item2 bg-black w-[470px] h-[2px] mr-[100px] mt-[18px] opacity-40"></div>
                     </div>
                     <!-- special_content_text -->
-                    <div class="product_content">
+                    <div class="product_content w-[1160px] m-auto grid grid-cols-4 gap-4 pt-[45px] h-[470px]">
                         <div class="product_cafe">
-                            <div class="product_cafe_box">
+                            <div
+                                class="product_cafe_box relative overflow-hidden absolute transition-[0.6] text-center">
                                 <div class="cafe_image">
                                     <img src="./image/sp5.jpg" width="270px">
                                 </div>
-                                <div class="translate">
+                                <div class="translate absolute transition-[0.6] text-center">
                                     <a href="">
                                         <button class="onclick">XEM CHI TIẾT</button>
                                     </a>
