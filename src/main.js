@@ -1,5 +1,6 @@
 import Navigo from "navigo";
 import Home from "./pages/home";
+import introducePage from "./pages/introduce";
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
 
@@ -11,6 +12,7 @@ const render = async (content, id) => {
 
 router.on({
     "/": () => render(Home),
+    "/gioithieu": () => render(introducePage),
 });
 
 router.resolve();
