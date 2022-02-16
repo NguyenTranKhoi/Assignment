@@ -1,3 +1,5 @@
+import { get } from "../api/posts";
+
 const detailProduct = {
     async print(id) {
         const { data } = await get(id);
@@ -7,14 +9,14 @@ const detailProduct = {
                     <div class="image-pr">
                         <div class="image-right">
                             <div class="right-pr">
-                                <img src="./img/14.jpg" alt="" class="m-auto w-3/5">
+                                <img src="${data.img}" alt="" class="m-auto w-3/5">
                             </div>
                         </div>
             </div>
                 <div class="cart p-[30px] w-[74%] m-auto">
                     <div class="top">
-                        <h3 class="text-2xl pb-[20px]">ĐỒNG HỒ DANIEL WELLINGTON DW00500001 NỮ PIN DÂY INOX</h3>
-                        <span>4,230,000đ</span>
+                        <h3 class="text-2xl pb-[20px]">${data.desc}</h3>
+                        <span>${data.price}</span>
                     </div>
                     <div class="botbot text-center bg-teal-300 p-[20px] mt-[30px] text-2xl">
                         <a href="" class="no-underline text-white">Thêm vào giỏ hàng</a>

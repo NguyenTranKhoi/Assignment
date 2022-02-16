@@ -16,7 +16,7 @@ router.on({
     "/gioithieu": () => render(introducePage),
     "/chitietsanpham/:id": ({ data }) => {
         const { id } = data;
-        render(detailProduct);
+        render(detailProduct, id);
     },
 });
 

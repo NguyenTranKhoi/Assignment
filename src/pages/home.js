@@ -15,6 +15,9 @@ const Home = {
                 </div>
                 <main>
                     ${newContent.print()}
+                    <div class="news">
+                        ${await newContent.print()}
+                    </div>
                 </main>
                 <footer>
                     ${footer.print()}
