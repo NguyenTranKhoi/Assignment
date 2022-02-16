@@ -2,6 +2,7 @@
   "name": "asm",
   "version": "0.0.0",
   "scripts": {
+    "start:server": "json-server --watch db.json --port 3003",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"

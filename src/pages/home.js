@@ -14,7 +14,7 @@ const Home = {
                     </div>
                 </div>
                 <main>
-                    ${newContent.print()}
+                 
                     <div class="news">
                         ${await newContent.print()}
                     </div>

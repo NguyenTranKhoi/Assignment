@@ -1,10 +1,13 @@
 import { get } from "../api/posts";
+import footer from "../components/footer";
+import header from "../components/header";
 
 const detailProduct = {
     async print(id) {
         const { data } = await get(id);
         return /* html */ `
-            <div class="products p-[20px]">
+        ${header.print()}
+            <div class="products p-[20px] pt-[120px]">
                 <div class="row-pr grid grid-cols-2">
                     <div class="image-pr">
                         <div class="image-right">
@@ -90,7 +93,7 @@ const detailProduct = {
             </div>
         </div>
     </div>
-
+    ${footer.print()}
         `;
     },
 };
