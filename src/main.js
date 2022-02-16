@@ -1,4 +1,5 @@
 import Navigo from "navigo";
+import detailProduct from "./pages/detail-product";
 import Home from "./pages/home";
 import introducePage from "./pages/introduce";
 
@@ -13,6 +14,10 @@ const render = async (content, id) => {
 router.on({
     "/": () => render(Home),
     "/gioithieu": () => render(introducePage),
+    "/chitietsanpham/:id": ({ data }) => {
+        const { id } = data;
+        render(detailProduct);
+    },
 });
 
 router.resolve();
