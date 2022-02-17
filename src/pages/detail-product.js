@@ -71,22 +71,22 @@ const detailProduct = {
             <h3>Sản phẩm cùng loại</h3>
             <div class="pr-ct grid grid-cols-4 gap-[10px]">
                 <div class="pr p-[20px]">
-                    <a href=""><img src="./img/12.jpg" alt="" class="w-[80%] m-auto"></a>
+                    <a href=""><img src="${data.img}" alt="" class="w-[80%] m-auto"></a>
                     <h3 class="text-base py-[15px] px-[0px]">ĐỒNG HỒ CANDINO C4433/3 NỮ PIN DÂY INOX</h3>
                     <p class="text-sm">3,996,000đ</p>
                 </div>
                 <div class="pr p-[20px]">
-                    <a href=""><img src="./img/13.jpg" alt="" class="w-[80%] m-auto"></a>
+                    <a href=""><img src="${data.img}" alt="" class="w-[80%] m-auto"></a>
                     <h3 class="text-base py-[15px] px-[0px]">ĐỒNG HỒ SKAGEN 885SSLB NỮ PIN DÂY DA</h3>
                     <p class="text-sm">5,900,000đ</p>
                 </div>
                 <div class="pr p-[20px]">
-                    <a href=""><img src="./img/14.jpg" alt="" class="w-[80%] m-auto"></a>
+                    <a href=""><img src="${data.img}" alt="" class="w-[80%] m-auto"></a>
                     <h3 class="text-base py-[15px] px-[0px]">ĐỒNG HỒ DANIEL WELLINGTON DW00500001 NỮ PIN DÂY INOX</h3>
                     <p class="text-sm">4,230,000đ</p>
                 </div>
                 <div class="pr p-[20px]">
-                    <a href=""><img src="./img/15.jpg" alt="" class="w-[80%] m-auto"></a>
+                    <a href=""><img src="${data.img}" alt="" class="w-[80%] m-auto"></a>
                     <h3 class="text-base py-[15px] px-[0px]">ĐỒNG HỒ CASIO GA-100DE-2ADR NỮ PIN DÂY NHỰA</h3>
                     <p class="text-sm">4,393,000đ</p>
                 </div>
