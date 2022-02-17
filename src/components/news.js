@@ -144,20 +144,20 @@ const newContent = {
                 <!-- content-banner-->
                 <div class="content-new-heght pt-[50px]">
                     <h2 class="fonts text-center">ĐỒNG HỒ NỮ</h2>
-                    <div class="content-top grid grid-cols-4 pt-[50px]">
+                   ${data.map((post) => `
+                     <div class="content-top grid grid-cols-4 pt-[50px]">
                         <div
                             class="content-top-product border-dashed border-2 w-[310px] border-slate-400 text-center m-auto h-[370px] pt-[10px]">
                             <div class="hihi overflow-hidden">
                                 <a href="#">
-                                    <img src="./img/9.jpg" width="200" class="hover:scale-110 duration-700 m-auto">
+                                    <img src="${post.img}" width="200" class="hover:scale-110 duration-700 m-auto">
                                 </a>
                             </div>
-                            <p class="pt-[10px] text-sm text-slate-500">ĐỒNG HỒ NỮ</p>
-                            <h4 class="text-base"><a href="" class="no-underline text-stone-900 hover:text-amber-700">ĐỒNG
-                                    HỒ TISSOT T41.1.183.34 NỮ TỰ ĐỘNG DÂY INOX</a></h4>
+                            <p class="pt-[10px] text-sm text-slate-500">${post.title}</p>
+                            <h4 class="text-base"><a href="/chitietsanpham/${post.id}" class="no-underline text-stone-900 hover:text-amber-700">${post.desc}</a></h4>
                             <div class="text">
                                 <!-- <del>20,217,000đ</del> -->
-                                <strong>17,640,000đ</strong>
+                                <strong>${post.price}</strong>
                             </div>
                         </div>
                         <!-- content-top-product 9-->
@@ -165,15 +165,14 @@ const newContent = {
                             class="content-top-product border-dashed border-2 w-[310px] border-slate-400 text-center m-auto h-[370px] pt-[10px]">
                             <div class="hihi overflow-hidden">
                                 <a href="#">
-                                    <img src="./img/10.jpg" width="200" class="hover:scale-110 duration-700 m-auto">
+                                    <img src="${post.img}" width="200" class="hover:scale-110 duration-700 m-auto">
                                 </a>
                             </div>
-                            <p class="pt-[10px] text-sm text-slate-500">ĐỒNG HỒ NỮ</p>
-                            <h4 class="text-base"><a href="" class="no-underline text-stone-900 hover:text-amber-700">ĐỒNG
-                                    HỒ CITIZEN EX1410-88A NỮ ECO-DRIVE DÂY INOX</a></h4>
+                            <p class="pt-[10px] text-sm text-slate-500">${post.title}</p>
+                            <h4 class="text-base"><a href="/chitietsanpham/${post.id}" class="no-underline text-stone-900 hover:text-amber-700">${post.desc}</a></h4>
                             <div class="text">
                                 <del>6,800,000đ</del>
-                                <strong>6,120,000đ</strong>
+                                <strong>${post.price}</strong>
                             </div>
                         </div>
                         <!-- content-top-product 10-->
@@ -181,15 +180,14 @@ const newContent = {
                             class="content-top-product border-dashed border-2 w-[310px] border-slate-400 text-center m-auto h-[370px] pt-[10px]">
                             <div class="hihi overflow-hidden">
                                 <a href="#">
-                                    <img src="./img/11.jpg" width="200" class="hover:scale-110 duration-700 m-auto">
+                                    <img src="${post.img}" width="200" class="hover:scale-110 duration-700 m-auto">
                                 </a>
                             </div>
-                            <p class="pt-[10px] text-sm text-slate-500">ĐỒNG HỒ NỮ</p>
-                            <h4 class="text-base"><a href="" class="no-underline text-stone-900 hover:text-amber-700">ĐỒNG
-                                    HỒ OGIVAL OG385-032LW-T NỮ PIN DÂY INOX</a></h4>
+                            <p class="pt-[10px] text-sm text-slate-500">${post.title}</p>
+                            <h4 class="text-base"><a href="/chitietsanpham/${post.id}" class="no-underline text-stone-900 hover:text-amber-700">${post.desc}</a></h4>
                             <!-- <del>5,600,000đ</del> -->
                             <div class="text">
-                                <strong>9,384,000đ</strong>
+                                <strong>${post.price}</strong>
                             </div>
                         </div>
                         <!-- content-top-product 11-->
@@ -197,15 +195,14 @@ const newContent = {
                             class="content-top-product border-dashed border-2 w-[310px] border-slate-400 text-center m-auto h-[370px] pt-[10px]">
                             <div class="hihi overflow-hidden">
                                 <a href="#">
-                                    <img src="./img/12.jpg" width="200" class="hover:scale-110 duration-700 m-auto">
+                                    <img src="${post.img}" width="200" class="hover:scale-110 duration-700 m-auto">
                                 </a>
                             </div>
-                            <p class="pt-[10px] text-sm text-slate-500">ĐỒNG HỒ NỮ</p>
-                            <h4 class="text-base"><a href="" class="no-underline text-stone-900 hover:text-amber-700">ĐỒNG
-                                    HỒ CANDINO C4433/3 NỮ PIN DÂY INOX</a></h4>
+                            <p class="pt-[10px] text-sm text-slate-500">${post.title}</p>
+                            <h4 class="text-base"><a href="/chitietsanpham/${post.id}" class="no-underline text-stone-900 hover:text-amber-700">${post.desc}</a></h4>
                             <div class="text">
                                 <del>4,440,000đ</del>
-                                <strong>3,996,000đ</strong>
+                                <strong>${post.price}</strong>
                             </div>
                         </div>
                         <!-- content-top-product 12-->
@@ -216,16 +213,15 @@ const newContent = {
                             class="content-top-product border-dashed border-2 w-[310px] border-slate-400 text-center m-auto h-[370px] pt-[10px]">
                             <div class="hihi overflow-hidden">
                                 <a href="#">
-                                    <img src="./img/13.jpg" width="200" class="hover:scale-110 duration-700 m-auto">
+                                    <img src="${post.img}" width="200" class="hover:scale-110 duration-700 m-auto">
                                 </a>
                             </div>
-                            <p class="pt-[10px] text-sm text-slate-500">ĐỒNG HỒ NỮ</p>
-                            <h4 class="text-base"><a href="" class="no-underline text-stone-900 hover:text-amber-700">ĐỒNG
-                                    HỒ SKAGEN 885SSLB NỮ PIN DÂY DA</a></h4>
+                            <p class="pt-[10px] text-sm text-slate-500">${post.title}</p>
+                            <h4 class="text-base"><a href="/chitietsanpham/${post.id}" class="no-underline text-stone-900 hover:text-amber-700">${post.desc}</a></h4>
                             <!-- <del>5,600,000đ</del> -->
                             <div class="text">
                                 <!-- <del>3,042,000đ</del> -->
-                                <strong>5,900,000đ</strong>
+                                <strong>${post.price}</strong>
                             </div>
                         </div>
                         <!-- content-top-product 13-->
@@ -233,16 +229,15 @@ const newContent = {
                             class="content-top-product border-dashed border-2 w-[310px] border-slate-400 text-center m-auto h-[370px] pt-[10px]">
                             <div class="hihi overflow-hidden">
                                 <a href="#">
-                                    <img src="./img/14.jpg" width="200" class="hover:scale-110 duration-700 m-auto">
+                                    <img src="${post.img}" width="200" class="hover:scale-110 duration-700 m-auto">
                                 </a>
                             </div>
-                            <p class="pt-[10px] text-sm text-slate-500">ĐỒNG HỒ NỮ</p>
-                            <h4 class="text-base"><a href="" class="no-underline text-stone-900 hover:text-amber-700">ĐỒNG
-                                    HỒ DANIEL WELLINGTON DW00500001 NỮ PIN DÂY INOX</a></h4>
+                            <p class="pt-[10px] text-sm text-slate-500">${post.title}</p>
+                            <h4 class="text-base"><a href="/chitietsanpham/${post.id}" class="no-underline text-stone-900 hover:text-amber-700">${post.desc}</a></h4>
                             <!-- <del>5,600,000đ</del> -->
                             <div class="text">
                                 <del>4,700,000đ</del>
-                                <strong>4,230,000đ</strong>
+                                <strong>${post.price}</strong>
                             </div>
                         </div>
                         <!-- content-top-product 14-->
@@ -250,16 +245,15 @@ const newContent = {
                             class="content-top-product border-dashed border-2 w-[310px] border-slate-400 text-center m-auto h-[370px] pt-[10px]">
                             <div class="hihi overflow-hidden">
                                 <a href="#">
-                                    <img src="./img/15.jpg" width="200" class="hover:scale-110 duration-700 m-auto">
+                                    <img src="${post.img}" width="200" class="hover:scale-110 duration-700 m-auto">
                                 </a>
                             </div>
-                            <p class="pt-[10px] text-sm text-slate-500">ĐỒNG HỒ NỮ</p>
-                            <h4 class="text-base"><a href="" class="no-underline text-stone-900 hover:text-amber-700">ĐỒNG
-                                    HỒ CASIO GA-100DE-2ADR NỮ PIN DÂY NHỰA</a></h4>
+                            <p class="pt-[10px] text-sm text-slate-500">${post.title}</p>
+                            <h4 class="text-base"><a href="/chitietsanpham/${post.id}" class="no-underline text-stone-900 hover:text-amber-700">${post.desc}</a></h4>
                             <!-- <del>5,600,000đ</del> -->
                             <div class="text">
                                 <!-- <del>7,680,000đ</del> -->
-                                <strong>4,393,000đ</strong>
+                                <strong>${post.price}</strong>
                             </div>
                         </div>
                         <!-- content-top-product 15-->
@@ -267,19 +261,19 @@ const newContent = {
                             class="content-top-product border-dashed border-2 w-[310px] border-slate-400 text-center m-auto h-[370px] pt-[10px]">
                             <div class="hihi overflow-hidden">
                                 <a href="#">
-                                    <img src="./img/16.jpg" width="200" class="hover:scale-110 duration-700 m-auto">
+                                    <img src="${post.img}" width="200" class="hover:scale-110 duration-700 m-auto">
                                 </a>
                             </div>
-                            <p class="pt-[10px] text-sm text-slate-500">ĐỒNG HỒ NỮ</p>
-                            <h4 class="text-base"><a href="" class="no-underline text-stone-900 hover:text-amber-700">ĐỒNG
-                                    HỒ CASIO LA670WL-1BDF NỮ PIN DÂY DA</a></h4>
+                            <p class="pt-[10px] text-sm text-slate-500">${post.title}</p>
+                            <h4 class="text-base"><a href="/chitietsanpham/${post.id}" class="no-underline text-stone-900 hover:text-amber-700">${post.desc}</a></h4>
                             <!-- <del>5,600,000đ</del> -->
                             <div class="text">
                                 <del>851,000đ</del>
-                                <strong>766,000đ</strong>
+                                <strong>${post.price}</strong>
                             </div>
                         </div>
                         <!-- content-top-product 8-->
+                   `).join("")}
                     </div>
                     <!-- content-top-new-->
                 </div>

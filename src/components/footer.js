@@ -8,7 +8,7 @@ const footer = {
                 <!-- footter-left-->
                 <div class="footter-center text-center">
                     <div class="footter-center-logo">
-                        <img src="./img/logo-mona-watches-white.png" class="line2 w-[200px] m-auto">
+                        <img src="../img/logo-mona-watches-white.png" class="line2 w-[200px] m-auto">
                     </div>
                     <!-- footter-center-logo-->
                     <div class="footter-center-text">

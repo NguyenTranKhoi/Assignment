@@ -1,7 +1,7 @@
 import intance from "./insta";
 
 export const getAll = () => {
-    const url = "/posts";
+    const url = "/posts/?_start=0&_limit=1";
     return intance.get(url);
 };
 export const get = (id) => {
