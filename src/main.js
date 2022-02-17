@@ -2,6 +2,8 @@ import Navigo from "navigo";
 import detailProduct from "./pages/detail-product";
 import Home from "./pages/home";
 import introducePage from "./pages/introduce";
+import Signin from "./pages/signin";
+import Signup from "./pages/signup";
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
 
@@ -17,6 +19,8 @@ router.on({
         const { id } = data;
         render(detailProduct, id);
     },
+    "/dangky": () => render(Signup),
+    "/dangnhap": () => render(Signin),
 });
 
 router.resolve();

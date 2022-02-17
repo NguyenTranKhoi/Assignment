@@ -26,8 +26,9 @@ const header = {
                         </nav>
                         <div class="icon pt-[5px]">
                             <i class="fas fa-search text-slate-50 hover:text-orange-500 p-[10px]"></i>
-                            <a href="" class="no-underline ">
-                                <i class="fas fa-user text-slate-50 hover:text-orange-500 p-[10px]"></i>
+                            <a href="/dangnhap" class="no-underline text-slate-50 hover:text-orange-500 p-[10px]">
+                                <!--<i class="fas fa-user text-slate-50 hover:text-orange-500 p-[10px]"></i>-->
+                                Đăng nhập
                             </a>
                             <i class="fas fa-cart-plus text-slate-50 hover:text-orange-500 p-[10px]"></i>
                         </div>
