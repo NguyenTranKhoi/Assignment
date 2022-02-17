@@ -1,5 +1,7 @@
 import Navigo from "navigo";
 import Dashboard from "./pages/admin/dashboard";
+import AdminAddPost from "./pages/admin/news/add";
+import AdminEditPost from "./pages/admin/news/edit";
 import detailProduct from "./pages/detail-product";
 import Home from "./pages/home";
 import introducePage from "./pages/introduce";
@@ -23,6 +25,8 @@ router.on({
     "/dangky": () => render(Signup),
     "/dangnhap": () => render(Signin),
     "/admin/dashboard": () => render(Dashboard),
+    "/admin/news/add": () => render(AdminAddPost),
+    "/admin/news/:id/edit": ({ data }) => render(AdminEditPost, data.id),
 });
 
 router.resolve();
