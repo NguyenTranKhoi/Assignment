@@ -1,3 +1,7 @@
+import toastr from "toastr";
+import "toastr/build/toastr.min.css";
+import { reRender } from "../ultils";
+
 const header = {
     print() {
         return /* html */ `
@@ -39,6 +43,17 @@ const header = {
                 </div>
                 <!-- header-->
         `;
+    },
+    afterRender() {
+        const user = JSON.parse(localStorage.getItem("user"));
+        const loguot = document.querySelector("#logout");
+        document.querySelector("#account-email").innerHTML = user.email;
+        // logout
+        loguot.addEventListener("click", () => {
+            toastr.success("logout thành công");
+            localStorage.removeItem("user");
+            reRender(header, "#header");
+        });
     },
 };
 
