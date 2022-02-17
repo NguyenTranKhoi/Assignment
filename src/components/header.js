@@ -24,6 +24,7 @@ const header = {
                                 <li class="inline-block p-[6px] pt-[15px]"><a href=""
                                         class="no-underline text-slate-50 hover:text-orange-500">PHỤ
                                         KIỆN</a></li>
+                               
                                 <li class="inline-block p-[6px] pt-[15px]"><a href=""
                                         class="no-underline text-slate-50 hover:text-orange-500">LIÊN HỆ</a></li>
                             </ul>
@@ -39,7 +40,6 @@ const header = {
                         <!-- icon-->
                     </div>
                     <!-- menu-->
-                
                 </div>
                 <!-- header-->
         `;

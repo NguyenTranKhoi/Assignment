@@ -1,4 +1,5 @@
 import Navigo from "navigo";
+import Dashboard from "./pages/admin/dashboard";
 import detailProduct from "./pages/detail-product";
 import Home from "./pages/home";
 import introducePage from "./pages/introduce";
@@ -21,6 +22,7 @@ router.on({
     },
     "/dangky": () => render(Signup),
     "/dangnhap": () => render(Signin),
+    "/admin/dashboard": () => render(Dashboard),
 });
 
 router.resolve();
