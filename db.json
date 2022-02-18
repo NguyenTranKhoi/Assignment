@@ -1,20 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "img": "http://placeimg.com/640/480/cats",
-      "title": "ĐONG HO NAM",
-      "desc": "ĐỒNG HỒ LOUIS ERARD 13900AA05.BDC102 NAM PIN DÂY DA",
-      "price": "18,195,300đ"
-    },
-    {
-      "id": 2,
-      "img": "http://placeimg.com/640/480/cats",
-      "title": "ĐONG HO NAM",
-      "desc": "ĐỒNG HỒ CITIZEN AU1080-20A NAM ECO-DRIVE DÂY VẢI",
-      "price": "5,040,000đ"
-    },
-    {
       "id": 3,
       "img": "http://placeimg.com/640/480/cats",
       "title": "ĐONG HO NAM",

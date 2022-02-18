@@ -1,5 +1,6 @@
 import Navigo from "navigo";
 import Dashboard from "./pages/admin/dashboard";
+import AdminNews from "./pages/admin/news";
 import AdminAddPost from "./pages/admin/news/add";
 import AdminEditPost from "./pages/admin/news/edit";
 import detailProduct from "./pages/detail-product";
@@ -27,6 +28,7 @@ router.on({
     "/admin/dashboard": () => render(Dashboard),
     "/admin/news/add": () => render(AdminAddPost),
     "/admin/news/:id/edit": ({ data }) => render(AdminEditPost, data.id),
+    "/admin/news": () => render(AdminNews),
 });
 
 router.resolve();
