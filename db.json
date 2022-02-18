@@ -1,102 +1,25 @@
 {
   "posts": [
     {
-      "id": 3,
-      "img": "http://placeimg.com/640/480/cats",
-      "title": "ĐONG HO NAM",
-      "desc": "ĐỒNG HỒ TISSOT T063.907.11.058.00 NAM TỰ ĐỘNG DÂY INOX",
-      "price": "21,940,000đ"
-    },
-    {
-      "id": 4,
-      "img": "http://placeimg.com/640/480/cats",
-      "title": "ĐONG HO NAM",
-      "desc": "ĐỒNG HỒ SEIKO SGEG99P1 NAM PIN DÂY DA",
-      "price": "3,684,000đ"
-    },
-    {
-      "id": 5,
-      "img": "http://placeimg.com/640/480/cats",
-      "title": "ĐONG HO NAM",
-      "desc": "ĐỒNG HỒ ORIENT FSTAA002W0 NAM PIN DÂY DA",
-      "price": "2,737,000đ"
-    },
-    {
-      "id": 6,
-      "img": "http://placeimg.com/640/480/cats",
-      "title": "ĐONG HO NAM",
-      "desc": "ĐỒNG HỒ OLYM PIANUS OP99141-71AGSK TRẮNG NAM TỰ ĐỘNG DÂY..",
-      "price": "6,912,000 đ"
-    },
-    {
-      "id": 7,
-      "img": "http://placeimg.com/640/480/cats",
-      "title": "ĐONG HO NAM",
-      "desc": "ĐỒNG HỒ CASIO GA-110GB-1ADR NAM PIN DÂY NHỰA",
-      "price": "2,584,000đ"
-    },
-    {
-      "id": 8,
-      "img": "http://placeimg.com/640/480/cats",
-      "title": "ĐONG HO NAM",
-      "desc": "ĐỒNG HỒ CASIO MTP-1374L-1AVDF NAM PIN DÂY DA",
-      "price": "1,677,000đ"
-    },
-    {
-      "id": 9,
-      "img": "http://placeimg.com/640/480/cats",
+      "img": "http://res.cloudinary.com/dqd4urvf6/image/upload/v1645153629/asm/s5jdvnvjiqymn97zbbfm.jpg",
       "title": "ĐONG HO NU",
-      "desc": "ĐỒNG HỒ TISSOT T41.1.183.34 NỮ TỰ ĐỘNG DÂY INOX",
-      "price": "17,640,000đ"
+      "desc": "Đồng Hồ Rolex",
+      "price": "18.000.000đ",
+      "id": 6
     },
     {
-      "id": 10,
-      "img": "http://placeimg.com/640/480/cats",
+      "img": "http://res.cloudinary.com/dqd4urvf6/image/upload/v1645153941/asm/igqp6brc0fx2p3idhkax.jpg",
       "title": "ĐONG HO NU",
-      "desc": "ĐỒNG HỒ CITIZEN EX1410-88A NỮ ECO-DRIVE DÂY INOX",
-      "price": "6,120,000đ"
+      "desc": "Đồng Hồ Rolex",
+      "price": "18.000.000đ",
+      "id": 7
     },
     {
-      "id": 11,
-      "img": "http://placeimg.com/640/480/cats",
-      "title": "ĐONG HO NU",
-      "desc": "ĐỒNG HỒ OGIVAL OG385-032LW-T NỮ PIN DÂY INOX",
-      "price": "9,384,000đ"
-    },
-    {
-      "id": 12,
-      "img": "http://placeimg.com/640/480/cats",
-      "title": "ĐONG HO NU",
-      "desc": "ĐỒNG HỒ CANDINO C4433/3 NỮ PIN DÂY INOX",
-      "price": "3,996,000đ"
-    },
-    {
-      "id": 13,
-      "img": "http://placeimg.com/640/480/cats",
-      "title": "ĐONG HO NU",
-      "desc": "ĐỒNG HỒ SKAGEN 885SSLB NỮ PIN DÂY DA",
-      "price": "5,900,000đ"
-    },
-    {
-      "id": 14,
-      "img": "http://placeimg.com/640/480/cats",
-      "title": "ĐONG HO NU",
-      "desc": "ĐỒNG HỒ DANIEL WELLINGTON DW00500001 NỮ PIN DÂY INOX",
-      "price": "4,230,000đ"
-    },
-    {
-      "id": 15,
-      "img": "http://placeimg.com/640/480/cats",
-      "title": "ĐONG HO NU",
-      "desc": "ĐỒNG HỒ CASIO GA-100DE-2ADR NỮ PIN DÂY NHỰA",
-      "price": "4,393,000đ"
-    },
-    {
-      "id": 16,
-      "img": "http://placeimg.com/640/480/cats",
-      "title": "ĐONG HO NU",
-      "desc": "ĐỒNG HỒ CASIO LA670WL-1BDF NỮ PIN DÂY DA",
-      "price": "766,000đ"
+      "img": "http://res.cloudinary.com/dqd4urvf6/image/upload/v1645154756/asm/sxos7h3fzdqi3ykfufei.jpg",
+      "title": "Khương Bảo Ninh",
+      "desc": "Cúc Tịnh Y",
+      "price": "Vô giá",
+      "id": 8
     }
   ],
   "users": [
@@ -106,6 +29,13 @@
       "username": "Khôi",
       "RepeatPassword": "123456",
       "id": 1
+    },
+    {
+      "email": "hihi@gmail.com",
+      "password": "$2a$10$5gS.dpVAC..5oPaGo/Krhug1P6RruHjdOElTdUnw.p.eZAsEBH8Le",
+      "username": "hihi",
+      "RepeatPassword": "1234567",
+      "id": 2
     }
   ]
 }

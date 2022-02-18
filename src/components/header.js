@@ -32,9 +32,9 @@ const header = {
                         <div class="icon pt-[5px]">
                             <i class="fas fa-search text-slate-50 hover:text-orange-500 p-[10px]"></i>
                             <a href="/dangnhap" class="no-underline text-slate-50 hover:text-orange-500 p-[10px]">
-                                <!--<i class="fas fa-user text-slate-50 hover:text-orange-500 p-[10px]"></i>-->
                                 Đăng nhập
                             </a>
+                            <!-- <i id="account-email" class="fas fa-user text-slate-50 hover:text-orange-500 p-[10px]"></i> -->
                             <i class="fas fa-cart-plus text-slate-50 hover:text-orange-500 p-[10px]"></i>
                         </div>
                         <!-- icon-->

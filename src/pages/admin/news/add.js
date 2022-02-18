@@ -1,4 +1,5 @@
 import axios from "axios";
+import toastr from "toastr";
 import { add } from "../../../api/posts";
 import AdminNav from "../../../components/admin/AdminNav";
 
@@ -35,16 +36,26 @@ const AdminAddPost = {
                     <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
                         <!-- Replace with your content -->
                         <div class="px-4 py-6 sm:px-0">
-                        <form id="form-add-post">
-                            <input type="text" class="border border-black" id="title-post" placeholder="Title"/><br />
-                            <div class="w-3xl grid grid-cols-2 gap-8">
-                            <div><input type="file" class="border border-black" id="img-post" /></div>
-                            <div><img width="200" src="https://thumbs.dreamstime.com/b/no-thumbnail-image-placeholder-forums-blogs-websites-148010362.jpg" id="img-preview"/></div>
-                            </div>
-                            <textarea name="" cols="30" rows="10" class="border border-black" id="desc-post" placeholder="Description"></textarea><br />
-                            <button>Thêm</button>
-                        </form>
-                        <div class="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
+                            <form id="form-add-post">
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Chọn ảnh</label>
+                                    <input class="form-control" type="file" id="img-post">
+                                </div>
+                                <div><img width="200" src="https://thumbs.dreamstime.com/b/no-thumbnail-image-placeholder-forums-blogs-websites-148010362.jpg" id="img-preview"/></div>
+                                <div class="mb-3">
+                                    <label for="exampleInputtext1" class="form-label">Tên phụ sản phẩm</label>
+                                    <input type="text" class="form-control" id="title-post" aria-describedby="textHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputtext1" class="form-label">Tên sản phẩm</label>
+                                    <input type="text" class="form-control" id="desc-post" aria-describedby="textHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputtext1" class="form-label">Giá sản phẩm</label>
+                                    <input type="text" class="form-control" id="price-post" aria-describedby="textHelp">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
                         </div>
                         <!-- /End replace -->
                     </div>
@@ -55,8 +66,14 @@ const AdminAddPost = {
     afterRender() {
         const formAdd = document.querySelector("#form-add-post");
         const imgPost = document.querySelector("#img-post");
+        const imgPreview = document.querySelector("#img-preview");
         const CLOUDINARY_API_URL = "https://api.cloudinary.com/v1_1/dqd4urvf6/image/upload";
         const CLOUDINARY_PRESET = "zmppimam";
+
+        // handle sự kiện change để xem ảnh trên local
+        imgPost.addEventListener("change", (e) => {
+            imgPreview.src = URL.createObjectURL(e.target.files[0]);
+        });
 
         formAdd.addEventListener("submit", async (e) => {
             e.preventDefault();
@@ -72,10 +89,15 @@ const AdminAddPost = {
             });
             // call api them bai viet
             add({
-                title: document.querySelector("#title-post").value,
                 img: data.url,
+                title: document.querySelector("#title-post").value,
                 desc: document.querySelector("#desc-post").value,
-            });
+                price: document.querySelector("#price-post").value,
+            })
+                .then(() => toastr.success("Thêm thành công"))
+                .then(() => {
+                    document.location.href = "/#/admin/news";
+                });
         });
     },
 };

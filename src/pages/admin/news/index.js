@@ -1,5 +1,7 @@
+import toastr from "toastr";
 import { getAll, remove } from "../../../api/posts";
 import AdminNav from "../../../components/admin/AdminNav";
+import "toastr/build/toastr.min.css";
 
 const AdminNews = {
     async print() {
@@ -39,8 +41,10 @@ const AdminNews = {
                             <thead class="bg-gray-50">
                                 <tr>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">STT</th>
-                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tiêu đề</th>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Ảnh</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tên Phụ Sản Phẩm</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tên Sản Phẩm</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Giá</th>
                                 <th scope="col" class="relative px-6 py-3"></th>
                                 </tr>
                             </thead>
@@ -48,12 +52,12 @@ const AdminNews = {
                             ${data.map((post, index) => `
                                 <tr>
                                     <td class="px-6 py-4 whitespace-nowrap">${index + 1}</td>
-                                    <td class="px-6 py-4 whitespace-nowrap">${post.title}</td>
                                     <td class="px-6 py-4 whitespace-nowrap"><img src="${post.img}" width="50"/></td>
-                                    <td class="px-6 py-4 whitespace-nowrap">
-                                        <a href="/admin/news/${post.id}/edit">Edit</a>
-                                        <button data-id="${post.id}" class="btn btn-remove">Xoá</button>
-                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">${post.title}</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">${post.desc}</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">${post.price}</td>
+                                    <td><a class="btn btn-success" href="/admin/news/${post.id}/edit">Edit</a></td>
+                                    <td><a class="btn btn-remove btn-danger" data-id="${post.id}" href="">Xoá</a></td>
                                 </tr>
                             `).join("")}
                             </tbody>
@@ -67,7 +71,7 @@ const AdminNews = {
     },
     afterRender() {
         // lay danh sach buttun sau khi render
-        const buttons = document.querySelectorAll(".btn");
+        const buttons = document.querySelectorAll(".btn-remove");
         // tao vong lap cho nodeList buttun
         buttons.forEach((btn) => {
             // lay id tu thuoc tinh data id cua button
@@ -77,7 +81,7 @@ const AdminNews = {
                 if (confirm) {
                     // goi ham delete trong foder api va ban id vao ham
                     remove(id).then(() => {
-                        console.log("Đã xoá thành công");
+                        toastr.success("Đã xoá thành công");
                     });
                 }
             });
