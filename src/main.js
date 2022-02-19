@@ -16,6 +16,19 @@ const render = async (content, id) => {
     if (content.afterRender) content.afterRender(id);
 };
 
+router.on("/admin/*", () => { }, {
+    before: (done) => {
+        const userId = JSON.parse(localStorage.getItem("user")).id;
+        // neu userID === 1 thi render
+        if (userId === 1) {
+            done();
+        } else {
+            // nguoc lai thi redirect ve trang chu
+            document.location.href = "/";
+        }
+    },
+});
+
 router.on({
     "/": () => render(Home),
     "/gioithieu": () => render(introducePage),
