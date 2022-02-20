@@ -3,6 +3,7 @@ import Dashboard from "./pages/admin/dashboard";
 import AdminNews from "./pages/admin/news";
 import AdminAddPost from "./pages/admin/news/add";
 import AdminEditPost from "./pages/admin/news/edit";
+import PageContact from "./pages/contact";
 import detailProduct from "./pages/detail-product";
 import Home from "./pages/home";
 import introducePage from "./pages/introduce";
@@ -44,6 +45,7 @@ router.on({
     "/admin/news/:id/edit": ({ data }) => render(AdminEditPost, data.id),
     "/admin/news": () => render(AdminNews),
     "/page/product": () => render(PageProduct),
+    "/page/contact": () => render(PageContact),
 });
 
 router.resolve();
