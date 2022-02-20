@@ -3,13 +3,13 @@ import header from "../components/header";
 import PagePrductNews from "../components/page-prduct-new";
 
 const PageProduct = {
-    print() {
+    async print() {
         return /* html */ `
             <header>
                 ${header.print()}
             </header>
             <main>
-                ${PagePrductNews.print()}
+                ${await PagePrductNews.print()}
             </main>
             <footer>
                 ${footer.print()}

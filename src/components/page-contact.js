@@ -8,9 +8,9 @@ const Contact = {
                         <div class="left_main">
                             <h2 style="color: #777; font-size: 25px;">THÔNG TIN LIÊN HỆ</h2>
                             <p class="pt-[8px]" style="color: #777;">Địa chỉ: 428 Nguyễn Kiệm – P3 – Q. Phú Nhuận</p>
-                            <p class="pt-[8px]" style="color: #777;">Hotline: 0778601228</p>
-                            <p class="pt-[8px]" style="color: #777;">Zalo :0916386533</p>
-                            <p class="pt-[8px]" style="color: #777;">Email :rincoffee428@gmail.com</p>
+                            <p class="pt-[8px]" style="color: #777;">Hotline: 0111111111</p>
+                            <p class="pt-[8px]" style="color: #777;">Zalo :0983416384</p>
+                            <p class="pt-[8px]" style="color: #777;">Email :khoidolce@gmail.com</p>
                             <div class="info_item mt-[32px]">
                                 <h2 style="color: #777; font-size: 20px;">LIÊN HỆ VỚI CHÚNG TÔI</h2>
                                 <div class="box-item2 w-[225px] h-[2px] bg-black opacity-40"></div>

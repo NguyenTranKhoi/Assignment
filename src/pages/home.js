@@ -13,8 +13,7 @@ const Home = {
                         ${banner.print()}
                     </div>
                 </div>
-                <main>
-                 
+                <main>        
                     <div class="news">
                         ${await newContent.print()}
                     </div>
