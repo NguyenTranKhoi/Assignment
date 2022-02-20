@@ -11,7 +11,7 @@ const header = {
                         <ul>
                             <li class="inline-block p-[10px] pt-[15px]"><a href="/gioithieu"
                                     class="no-underline text-slate-50 hover:text-orange-500">GIỚI THIỆU</a></li>
-                            <li class="inline-block p-[10px] pt-[15px]"><a href=""
+                            <li class="inline-block p-[10px] pt-[15px]"><a href="/page/product"
                                     class="no-underline text-slate-50 hover:text-orange-500">SẢN PHẨM</a></li>
                             <li class="inline-block p-[10px] pt-[15px]"><a href=""
                                     class="no-underline text-slate-50 hover:text-orange-500">LIÊN HỆ</a></li>

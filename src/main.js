@@ -6,6 +6,7 @@ import AdminEditPost from "./pages/admin/news/edit";
 import detailProduct from "./pages/detail-product";
 import Home from "./pages/home";
 import introducePage from "./pages/introduce";
+import PageProduct from "./pages/page-product";
 import Signin from "./pages/signin";
 import Signup from "./pages/signup";
 
@@ -42,6 +43,7 @@ router.on({
     "/admin/news/add": () => render(AdminAddPost),
     "/admin/news/:id/edit": ({ data }) => render(AdminEditPost, data.id),
     "/admin/news": () => render(AdminNews),
+    "/page/product": () => render(PageProduct),
 });
 
 router.resolve();

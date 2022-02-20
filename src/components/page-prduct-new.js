@@ -1,7 +1,7 @@
 const PagePrductNews = {
     print() {
         return /* html */ `
-            <div class="content pt-[50px]">
+            <div class="content pt-[100px]">
                 <h2 class="fonts text-center">SẢN PHẨM MONA</h2>
                 <div class="content-top grid grid-cols-4 pt-[50px]">
                     <div
